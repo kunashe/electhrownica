@@ -2,14 +2,23 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
-    kunashe, hacker 
+	
+	Alwyn
+	Ian
+	Phil
+	Zhen
+    Ku
 
 # THANKS
 
     html5boilerplate team
+	SLA
+	Starhub
+	Upsingapore
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     Normalize.css, jQuery, Modernizr
+	PHP
+	Leafletjs, Openstreetmaps
