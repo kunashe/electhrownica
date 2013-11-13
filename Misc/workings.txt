@@ -1,0 +1,232 @@
+<iframe width="400" height="400" frameborder="0" allowfullscreen src="http://mapsdata.co.uk/mapsdataapp/index.php/site/htmlembed/cc208bb2b272f513cf78c6ae00ff9f0d0?marker=mapsdata_m4&md5=cc208bb2b272f513cf78c6ae00ff9f0d0&display=normalmap&viewcolor=CC0000&maptype=ukmap&viewopacity=1&markersize=32&"></iframe>
+
+<iframe width="400" height="400" frameborder="0" allowfullscreen src="http://mapsdata.co.uk/mapsdataapp/index.php/site/htmlembed/e9fa367b17b8e0ae07f39d53e8a9180f0?marker=mapsdata_m4&md5=e9fa367b17b8e0ae07f39d53e8a9180f0&display=bubblemap&viewcolor=CC0000&maptype=ukmap&viewopacity=0.33&markersize=32&viewcolumn=Magnitude&"></iframe>
+
+0 0 2248 700
+
+1131.904378151809, 370.4921185667263
+1185.1479894243423, 142.98049218081724
+
+delta x = 53.2436
+
+delta y = 227.5116
+
+1228.880201717635, 1189.4955882588401
+1202.471323160251, 1003.7514995599631
+
+delta x = 26.4089
+
+delta y = 185.7441
+
+Object { top=
+
+2058.283447265625
+
+, left=
+
+564.7000122070312
+
+}
+
+Object { top=
+
+497.316650390625
+
+, left=
+
+1127.0333251953125
+
+}
+
+Object { top=
+
+2317.416748046875
+
+, left=
+
+701.066650390625
+
+}
+
+var path = $('#path'); $('#mapsdata').contents().find('#OpenLayers\\.Map_4_OpenLayers_Container').prepend(path)
+
+OpenLayers.Layer.Vector.RootContainer_119
+
+OpenLayers.Layer.Vector.RootContainer_119
+
+$('#mapsdata').contents().find('')
+
+$('#mapsdata').contents().find('#OpenLayers\\.Layer\\.Vector_98_root').attr('transform')
+
+//---
+
+svglay = $('#mapsdata').contents().find('#OpenLayers\\.Layer\\.Vector_98_root').attr('transform').baseVal.getItem(0);
+
+if (svglay.type == SVGTransform.SVG_TRANSFORM_TRANSLATE){
+  var x = svglay.matrix.e,
+      y = svglay.matrix.f;
+}
+
+console.log(x);
+console.log(y);
+
+var txtel = '<span id="nontext" style="position: absolute; color: red;">nonsuchplace</span>'; $('#mapsdata').contents().find('#OpenLayers\\.Map_4_OpenLayers_Container').prepend(txtel);
+
+class="olTileImage"
+
+$('#mapsdata').contents().find('#OpenLayers\\.Geometry\\.Point_128').position()
+
+Object { top=
+
+831.4666748046875
+
+, left=
+
+1161.800048828125
+
+}
+
+function add_path(){
+	
+	var path = $("#path");
+	
+	$("#mapsdata").contents().find("#OpenLayers\\.Layer\\.OSM_2").append(path);
+	
+	var path_h = $("#mapsdata").contents().find("#path").height();
+	var path_w = $("#mapsdata").contents().find("#path").width();
+	
+	var bubbl_r = $('#mapsdata').contents().find('#OpenLayers\\.Geometry\\.Point_128').attr('r').animVal.value;
+	
+	var ref_off = $('#mapsdata').contents().find('#OpenLayers\\.Geometry\\.Point_128').offset();
+	
+	var path_top = (ref_off['top'] + bubbl_r) - path_h;
+	
+	var xmin, xmax, range_x, delta_x;
+	
+	xmin = viewport.wmc.tt_ltv_rdc.limits.xaxis['min'];
+	xmax = viewport.wmc.tt_ltv_rdc.limits.xaxis['max'];
+	utm_o = viewport.wmc.tt_ltv_rdc['utm_origin'];
+	
+	range_x = xmax - xmin;
+	
+	delta_x = ((utm_o-xmin)/range_x)*path_w;
+	
+	var path_left = (ref_off['left'] + bubbl_r) - delta_x;
+	
+	$('#mapsdata').contents().find('#path').offset({'top': path_top,'left': path_left});
+	
+}
+
+var unit_meta = train_data();
+
+var tracker = play(unit_meta['serv102']);
+
+pb();
+
+jQuery( elem ).data( "events" );
+
+ map.getNumZoomLevels = function(){
+                var zoomlevels = 16;
+                switch(maptype) {
+                    case 'greymaplabels':
+                        zoomlevels = 9;
+                    break;
+                    case 'greymap':
+                        zoomlevels = 6; 
+                    break;
+                    case 'ukmap':
+                        zoomlevels = 12;
+                    break;
+                    case 'iraqmap':
+                    case 'worldgrey':
+                        zoomlevels = 23;
+                    break;
+                    case 'nomap':
+                        zoomlevels = 22;
+                    break;
+                    default:
+                        zoomlevels = 9;
+                    break;
+                }
+                if(MAXZOOM != '' && MAXZOOM < zoomlevels-1) {
+                    zoomlevels = MAXZOOM+1;
+                }
+                return zoomlevels;
+            };
+
+            map.isValidZoomLevel = function(zoomLevel) {
+                var zoomTill = 16;
+                switch(maptype) {
+                    case 'greymaplabels':
+                        zoomTill = 8;
+                    break;
+                    case 'greymap':
+                        zoomTill = 5; 
+                    break;
+                    case 'ukmap':
+                        zoomTill = 12;
+                    break;
+                    case 'iraqmap':
+                    case 'worldgrey':
+                        zoomTill = 22;
+                    break;
+                    case 'nomap':
+                        zoomTill = 22;
+                    break;
+                    default:
+                        zoomTill = 8;
+						
+					
+					
+			onload='add_path()'		
+					
+			<div id="path" style="position: absolute; z-index: 3001; width: 650px; height: 1900px; border: 5px solid #000; ">
+					
+					<br/>
+					<br/>
+					
+					<div id="route" style="position: absolute; width: 562.3333px; z-index: 2000;">
+					
+					
+					</div>
+					
+				</div>
+				
+				ctx.rect(x + (0.01*x),y + (-0.01*y),ctx.measureText(unit + " | " + refx + "km").width,-8);
+				
+				ctx.fillText(unit + " | " + refx + "km",x + (0.01*x),y + (-0.01*y));
+				
+				//$('#OpenLayers\\.Geometry\\.Point_114').offset();
+				
+				//$('#OpenLayers\\.Geometry\\.Point_114').attr('r').animVal.value;
+				
+				http://mapsdata.co.uk/mapsdataapp/index.php/site/htmlembed/e9fa367b17b8e0ae07f39d53e8a9180f0?marker=mapsdata_m4&md5=e9fa367b17b8e0ae07f39d53e8a9180f0&display=bubblemap&maptype=ukmap&viewcolumn=Magnitude&viewcolor=000066&zoom=12&center=52.499066,-1.877516";
+				
+				$('circle').first().ready(function(){
+
+	console.log($('circle').first());
+	
+	//$(this).attr('r').value;
+	
+	<iframe id="mapsdata" width="100%" height="1950" frameborder="0" allowfullscreen src="mapsdata.php"></iframe>
+
+});
+
+	//ref_off = $('circle').first().offset();
+	
+	//bubbl_r = $('circle').first().attr('r').animVal.value; 
+	
+	rt_code=tt_ltv_lob&direction=sb&service_type=17-Stop&service=06:20
+	
+	[N,E,lcm] = arrayfun(@(y,x) (ell2utm(y,x)),lat_r,lon_r,'uni',false);
+	
+	viewport.wmc = {
+					tt_ltv_rdc: {height: 1820,
+								width: 562.3333,
+								limits:{
+									xaxis:{min: 56.8616,max: 58.1159},
+									yaxis:{min: 579.5624,max: 583.8093}
+									},
+								utm_origin: 57.1893
+								}
+					};	

@@ -1,0 +1,13 @@
+urls:
+
+Bubble Map EUS - LIV
+
+http://mapsdata.co.uk/mapsdataapp/index.php/site/htmlembed/e12947e04533a00565a91a7d3611e9100?marker=mapsdata_m4&md5=e12947e04533a00565a91a7d3611e9100&display=bubblemap&maptype=ukmap&viewcolumn=Consumption&viewcolor=f6358a&zoom=13&center=52.389015,-1.963989
+
+Marker Terminals RDC - LTV
+
+http://mapsdata.co.uk/mapsdataapp/index.php/site/htmlembed/cc208bb2b272f513cf78c6ae00ff9f0d0?marker=mapsdata_m4&md5=cc208bb2b272f513cf78c6ae00ff9f0d0&display=normalmap&viewcolor=CC0000&maptype=ukmap&viewopacity=1&markersize=32&viewcolor=000066&zoom=13&center=52.340649,-1.967258
+
+http://mapsdata.co.uk/mapsdataapp/index.php/site/htmlembed/e9fa367b17b8e0ae07f39d53e8a9180f0?marker=mapsdata_m4&md5=e9fa367b17b8e0ae07f39d53e8a9180f0&display=bubblemap&viewcolor=000066&maptype=ukmap&viewopacity=0.33&markersize=32&viewcolumn=Magnitude&zoom=13&center=52.340649,-1.967258
+
+http://mapsdata.co.uk/mapsdataapp/index.php/site/htmlembed/ee23d4feb85b46d347cbded3e182032b0?marker=mapsdata_m4&md5=ee23d4feb85b46d347cbded3e182032b0&display=bubblemap&maptype=ukmap&viewcolumn=Magnitude&viewcolor=000066&zoom=13&center=52.340649,-1.967258
