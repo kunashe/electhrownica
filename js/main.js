@@ -1,9 +1,6 @@
 //---author: kunashe
 
 $("document").ready(function(){
-
-	//train_data = alloc();
-	//map_data();
 	
 	frame_info = null;
 								
@@ -11,12 +8,8 @@ $("document").ready(function(){
 	
 	map = L.map('map').setView([1.351928,103.819804], 12);
 	
-	 var kmlLayer = new L.KML("kml/planning_area.kml", {async: true});
-														  
-	 kmlLayer.on("loaded", function(e) { 
-		//map.fitBounds(e.target.getBounds());
-	 });
-											
+	 kmlLayer = new L.KML("kml/planning_area.kml", {async: true});
+														  											
 	 map.addLayer(kmlLayer);
 	
 	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -72,14 +65,32 @@ $("document").ready(function(){
 	  }
 	})(jQuery);
 
-	  kmlLayer.on("loaded", function(e) { 
-            popup();
-         });
+	kmlLayer.on("loaded", function(e) { 
+		
+		popup();
+		
+		$("#p17").click();
+		
+		$("svg g path").attr("stroke-width","2");
+		
+		$("svg g path").hover(function(){
+    
+			$(this).attr("fill","#ff0000");
+
+		},function(){
+
+			$(this).attr("fill","#0033ff");
+
+		});
+		
+		
+	 });
 	
-	$.countdown.setDefaults($.countdown.regional['compactLabels']);
+	//---countdown
 	
 	var austDay = new Date();
-	austDay = new Date(austDay.getFullYear(), 11 - 1, 13);
+	
+	austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 30);
 	
 	$('#defaultCountdown').countdown({until: austDay});
 	
