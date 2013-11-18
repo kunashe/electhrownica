@@ -1,4 +1,4 @@
-//---author: kunashe
+//---author: team electhrownica
 
 $("document").ready(function(){
 	
@@ -41,7 +41,7 @@ $("document").ready(function(){
 
 	bind_lb();
 	
-	//---countdown
+	//---activate countdown
 	
 	var austDay = new Date();
 	
@@ -98,7 +98,7 @@ function leader_board(list){
 
 }
 
-//---annotations
+//---map annotations - static concept
 
 function popup(){
 	
