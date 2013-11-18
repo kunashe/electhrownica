@@ -7,11 +7,11 @@
 	Ian
 	Phil
 	Zhen
-    Ku
+	Ku
 
 # THANKS
 
-    html5boilerplate team
+	html5boilerplate team
 	SLA
 	Starhub
 	Upsingapore
