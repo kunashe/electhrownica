@@ -8,29 +8,35 @@ $("document").ready(function(){
 	
 	map = L.map('map').setView([1.351928,103.819804], 12);
 	
-	 kmlLayer = new L.KML("kml/planning_area.kml", {async: true});
+	kmlLayer = new L.KML("kml/planning_area.kml", {async: true});
 														  											
-	 map.addLayer(kmlLayer);
+	map.addLayer(kmlLayer);
+	
+	kmlLayer.on("loaded", function(e){ 
+		
+		popup();
+		
+		$("#p17").click();
+		
+		$("svg g path").attr("stroke-width","2");
+		
+		$("svg g path").hover(function(){
+    
+			$(this).attr("fill","#ff0000");
+
+		},function(){
+
+			$(this).attr("fill","#0033ff");
+
+		});
+		
+	 });
 	
 	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: ' &copy; MMXIII <a href="#" target="_blank">Electhrownica</a> | &copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
     maxZoom: 18
 	}).addTo(map);
-	
-	//---anchor circles
-	
-	anchor_s = L.circle([52.30624848,-1.945547977], 150, {
-    color: '#ff4625',
-    fillColor: '#ff4625',
-    fillOpacity: 1
-	}).addTo(map);
-	
-	anchor_n = L.circle([52.68637707,-1.800372802], 150, {
-    color: '#ff4625',
-    fillColor: '#ff4625',
-    fillOpacity: 1
-	}).addTo(map);
-	
+		
 	//---leaderboard
 
 	$("li").on("click", function() {
@@ -64,27 +70,6 @@ $("document").ready(function(){
 		return $(this).clone().wrap('<div></div>').parent().html();
 	  }
 	})(jQuery);
-
-	kmlLayer.on("loaded", function(e) { 
-		
-		popup();
-		
-		$("#p17").click();
-		
-		$("svg g path").attr("stroke-width","2");
-		
-		$("svg g path").hover(function(){
-    
-			$(this).attr("fill","#ff0000");
-
-		},function(){
-
-			$(this).attr("fill","#0033ff");
-
-		});
-		
-		
-	 });
 	
 	//---countdown
 	
