@@ -100,9 +100,9 @@ textarea {
 	position: fixed;
 	width: 100%;
 	height: auto;
-	color: #61F7DB; /* FFFC35 ffb909 8DFF35*/
+	color: #61F7DB; 
 	background-color: #FFB811;
-	border-bottom: 2px solid #FFFC35; /*ffb909 8DFF35*/
+	border-bottom: 2px solid #FFFC35;
 	z-index: 1004;
 	float: left;
 	}
@@ -157,39 +157,6 @@ textarea {
     font-family: "Reenie Beanie";
     }
 	
-	#lap_delta{
-	float: left;
-	margin-left: 9px;
-	margin-top: 12px;
-	}
-	
-	#lap_delta td{
-	border: 1px solid #ffb909;
-	padding: 0px;
-	}
-	
-	.livery{
-	width: 60px;
-	height: 16px;
-	}
-	
-	.label{
-	color: #ffffff;
-	}
-	
-	.m_delta{
-	color: #ffffff;
-	}
-	
-	#lap_delta .label_cell{
-	padding-left: 1px;
-	padding-right: 1px;
-	}
-	
-	.data_cell{
-	text-align: center;
-	}
-	
 	#content {
 	height: 98%;
 	border-bottom: 15px solid #000066;
@@ -200,19 +167,6 @@ textarea {
 	width: 100%;
 	height: 100%;
 	border-bottom: 5px solid #fff;
-	}
-	
-	#path {
-	position: absolute;
-	width: 650px; 
-	height: 1900px; 
-	border: 5px solid #000; 
-	}
-		
-	#route {
-	position: absolute;
-	width: 562.3333px;
-	z-index: 2000;
 	}
 
 	.pb_container {
@@ -242,6 +196,11 @@ textarea {
 	margin: 0 auto;
 	margin-top: 10px;
     }
+	
+	#lb{
+	cursor: pointer;
+	}
+	
     .precinct {
     background: rgba(255, 255, 255, 0.8);
     margin-top: 0px;
@@ -288,13 +247,6 @@ textarea {
 	padding-top: 10px;
 
     }
-
-	.pb_container a {
-	color: #000066; 
-	font-weight: bold;
-	font-family: Symbola,Helvetica,sans-serif;
-	text-decoration: none;
-	}
 
 /* ==========================================================================
    Helper classes

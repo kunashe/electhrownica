@@ -1313,3 +1313,11 @@ $.fn.countdown = function(options) {
 var plugin = $.countdown = new Countdown(); // Singleton instance
 
 })(jQuery);
+
+//---leader board
+
+(function($) {
+  $.fn.outerHTML = function() {
+	return $(this).clone().wrap('<div></div>').parent().html();
+  }
+})(jQuery);

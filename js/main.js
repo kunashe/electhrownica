@@ -37,39 +37,9 @@ $("document").ready(function(){
     maxZoom: 18
 	}).addTo(map);
 		
-	//---leaderboard
+	//---activate leaderboard
 
-	$("li").on("click", function() {
-		var $myLi = $(this);
-		var listHeight = $("ol").innerHeight();
-		var elemHeight = $myLi.height();
-		var elemTop = $myLi.position().top;
-		var moveUp = listHeight - (listHeight - elemTop);
-		var moveDown = elemHeight;
-		var liId = $myLi.attr("id");
-		var enough = false;
-		var liHtml = $myLi.outerHTML();
-		
-		$("li").each(function() {
-			if ($(this).attr("id") == liId) {
-				return false;
-			}
-			$(this).animate({"top": '+=' + moveDown}, 1000);
-		});
-		
-		$myLi.animate({"top": '-=' + moveUp}, 1000, function() {
-			$myLi.remove();
-			var oldHtml = $("ol").html();
-			$("ol").html(liHtml + oldHtml);
-			$("li").attr("style", "");
-		});
-	});
-
-	(function($) {
-	  $.fn.outerHTML = function() {
-		return $(this).clone().wrap('<div></div>').parent().html();
-	  }
-	})(jQuery);
+	bind_lb();
 	
 	//---countdown
 	
@@ -82,6 +52,51 @@ $("document").ready(function(){
 	$('#year').text(austDay.getFullYear());
 	
 });
+
+//---bind leader board
+
+function bind_lb(){
+	
+	$("#lb li").click(function(){
+		
+		leader_board($(this));
+	
+	});
+
+}
+
+//--animate leader board
+
+function leader_board(list){
+
+	var $myLi = list;
+	var listHeight = $("#lb").innerHeight();
+	var elemHeight = $myLi.height();
+	var elemTop = $myLi.position().top;
+	var moveUp = listHeight - (listHeight - elemTop);
+	var moveDown = elemHeight;
+	var liId = $myLi.attr("id");
+	var enough = false;
+	var liHtml = $myLi.outerHTML();
+	
+	$("#lb li").each(function() {
+		if ($(this).attr("id") == liId) {
+			return false;
+		}
+		$(this).animate({"top": '+=' + moveDown}, 1000);
+	});
+	
+	$myLi.animate({"top": '-=' + moveUp}, 1000, function() {
+		$myLi.remove();
+		var oldHtml = $("#lb").html();
+		$("#lb").html(liHtml + oldHtml);
+		$("#lb li").attr("style", "");
+		
+		bind_lb();
+		
+	});
+
+}
 
 //---annotations
 
