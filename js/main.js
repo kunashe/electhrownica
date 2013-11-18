@@ -1,9 +1,7 @@
 //---author: team electhrownica
 
 $("document").ready(function(){
-	
-	frame_info = null;
-								
+									
 	//---leaflet
 	
 	map = L.map('map').setView([1.351928,103.819804], 12);
